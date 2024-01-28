@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": "./", // Set the base URL to the project root
+    "paths": {
+      "*": ["src/*"], // Add paths mapping
+      "db/*": ["src/db/*"] // Specific mapping for db
+    },
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitAny": true
+  },
+  "include": ["src/**/*"]
+}

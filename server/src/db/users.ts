@@ -52,7 +52,7 @@ export const getUserById = (id: string) => UserModel.findById(id);
  * @returns {Promise<Object>} A promise that resolves to the created user object.
  */
 export const createUser = (values: Record<string, any>): Promise<any> =>
-  new UserModel(values).save().then((user) => user.toObject());
+  new UserModel(values).save();
 
 /**
  * Deletes a user by their ID.

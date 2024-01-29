@@ -22,8 +22,7 @@ export default (router: express.Router) => {
    * @auth This route requires authentication. If authentication fails, it will return a 403 Forbidden response.
    * @response {Object[]} users - The list of all user records from the database.
    */
-  // router.get("/users", isAuthenticated, getAllUsers);
-  router.get("/users", getAllUsers);
+  router.get("/users", isAuthenticated, getAllUsers);
 
   /**
    * DELETE route for deleting a user.

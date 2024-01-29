@@ -1,4 +1,4 @@
-import { login, register } from "../controllers/authentication";
+import { login, logout, register } from "../controllers/authentication";
 import express from "express";
 /**
  * Sets up authentication routes.
@@ -17,4 +17,10 @@ export default (router: express.Router) => {
    * Accepts email and password in the request body and authenticates the user.
    */
   router.post("/auth/login", login);
+
+  /**
+   * Route for user logout.
+   * Clears the session token and logs the user out.
+   */
+  router.post("/auth/logout", logout);
 };

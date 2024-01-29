@@ -3,6 +3,12 @@ table.users_table {
   border-collapse: collapse;
 }
 
+.error {
+  background-color: #c66a00;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
 th {
   font-weight: bold;
   padding: 10px;
@@ -12,6 +18,15 @@ td {
   padding: 10px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+
+  button {
+    margin: 0 2px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 tr:hover {
